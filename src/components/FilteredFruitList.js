@@ -1,4 +1,5 @@
 import React from 'react';
+import Filter from './Filter';
 
 const FilteredFruitList = (props) => {
 
@@ -11,5 +12,10 @@ const FilteredFruitList = (props) => {
     );
 
 }
+
+FilteredFruitList.defaultProps = {
+  fruit: [],
+  filter: 'all'
+};
 
 export default FilteredFruitList;
